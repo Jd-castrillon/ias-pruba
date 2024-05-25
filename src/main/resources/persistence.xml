@@ -1,0 +1,16 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+    <persistence-unit name="bd-events-ias">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>com.ias.eventos.entities.Event</class>
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://8081:8081/eventos_ias"/>
+            <property name="javax.persistence.jdbc.user" value="juan-ias"/>
+            <property name="javax.persistence.jdbc.password" value="123"/>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+        </properties>
+
+    </persistence-unit>
+</persistence>
